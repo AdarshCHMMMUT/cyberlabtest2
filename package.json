@@ -14,14 +14,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.2.6"
   },
   "scripts": {
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1",
-  "client": "cd frontend && npm run dev",
-  "server": "cd backend && npm start", 
-  "dev": "concurrently \"npm run server\" \"npm run client\""
-},
+    "client": "cd frontend && npm run dev",
+    "server": "cd backend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
